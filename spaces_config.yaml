@@ -1,0 +1,22 @@
+# HuggingFace Spaces Configuration
+# This file configures the Space for deployment
+
+title: Voice Clone Singer Backend
+description: Backend for voice conversion in songs using UVR, RVC, and FFmpeg
+sdk: docker
+app_file: app.py
+pinned: false
+tags:
+  - audio
+  - voice-conversion
+  - music
+  - ai
+
+# Space settings
+space_settings:
+  # Use Docker runtime
+  runtime: docker
+  # Persistent storage
+  persistent_data_dir: /data
+  # Allow large file uploads
+  max_file_size: 500  # MB
